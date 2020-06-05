@@ -101,12 +101,3 @@ venv.bak/
 # mkdocs documentation
 /site
 
-# mypy
-.mypy_cache/
-
-# pyATS staffs
-archive/
-runinfo/
-
-#Vagrant
-*.vagrant
