@@ -4,11 +4,8 @@ from monitoring.pages.base import MainPage
 from time import sleep
 
 
-driver = webdriver.Chrome('C:\\Users\\Grom\\Documents\\chromedriver.exe')
-
-
 def test_login_nonexistent_user():
-
+    driver = webdriver.Chrome('C:\\Users\\Grom\\Documents\\chromedriver.exe')
     login = LoginPage(driver)
     driver.get('https://eos.com/crop-monitoring/')
     sleep(5)
@@ -22,10 +19,8 @@ def test_login_nonexistent_user():
     login.click_sign_in()
     sleep(1)
     login.available()
-
-
-driver.close()
-driver.quit()
+    driver.close()
+    driver.quit()
 
 
 if __name__ == "__main__":
